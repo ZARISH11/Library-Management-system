@@ -161,4 +161,35 @@ void returnBook() {
     cout << "Book returned successfully!\n\n";
 }
 main.cpp
+#include "Book.h"
 
+int main() {
+    int choice;
+
+    while (true) {
+        cout << "Library Management System\n";
+        cout << "1. Add Book\n";
+        cout << "2. View Books\n";
+        cout << "3. Register Member\n";
+        cout << "4. View Members\n";
+        cout << "5. Borrow Book\n";
+        cout << "6. Return Book\n";
+        cout << "7. Exit\n";
+        cout << "Enter your choice (1-7): ";
+        cin >> choice;
+
+        switch (choice) {
+            case 1: addBook(); break;
+            case 2: displayBooks(); break;
+            case 3: registerMember(); break;
+            case 4: displayMembers(); break;
+            case 5: borrowBook(); break;
+            case 6: returnBook(); break;
+            case 7: 
+                cout << "Thank you for using the Library Management System!\n";
+                return 0;
+            default: 
+                cout << "Invalid choice. Try again.\n\n";
+        }
+    }
+}
