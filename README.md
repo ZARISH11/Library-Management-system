@@ -1,2 +1,2 @@
 # Library-Management-system
-this is our first project
+This is our first project.
